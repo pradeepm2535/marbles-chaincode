@@ -584,7 +584,6 @@ func (t *SimpleChaincode) remove_trade(stub *shim.ChaincodeStub, args []string) 
 	return nil, nil
 }
 
-console.log("got it");
 
 
 // ============================================================================================================================
