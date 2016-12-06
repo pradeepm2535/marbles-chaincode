@@ -29,6 +29,7 @@ import (
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
+const s string = "constant"
 
 // SimpleChaincode example simple Chaincode implementation
 type SimpleChaincode struct {
