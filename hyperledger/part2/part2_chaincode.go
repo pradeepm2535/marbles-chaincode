@@ -78,7 +78,7 @@ func main() {
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
 	var Aval int
 	var err error
-	var mine :=  "abc"
+	var mine =  "abc"
 	use(mine)
 
 	if len(args) != 1 {
