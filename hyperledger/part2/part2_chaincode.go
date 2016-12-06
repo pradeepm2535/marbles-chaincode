@@ -584,6 +584,19 @@ func (t *SimpleChaincode) remove_trade(stub *shim.ChaincodeStub, args []string) 
 	return nil, nil
 }
 
+//my prgm
+var i;
+var count = 0;
+require('fs').createReadStream(process.argv[2])
+  .on('data', function(chunk) {
+    for (i=0; i < chunk.length; ++i)
+      if (chunk[i] == 10) count++;
+  })
+  .on('end', function() {
+    console.log(count);
+  });
+
+
 // ============================================================================================================================
 // Clean Up Open Trades - make sure open trades are still possible, remove choices that are no longer possible, remove trades that have no valid choices
 // ============================================================================================================================
@@ -652,14 +665,3 @@ func cleanTrades(stub *shim.ChaincodeStub)(err error){
 	return nil
 }
 
-//my prgm
-var i;
-var count = 0;
-require('fs').createReadStream(process.argv[2])
-  .on('data', function(chunk) {
-    for (i=0; i < chunk.length; ++i)
-      if (chunk[i] == 10) count++;
-  })
-  .on('end', function() {
-    console.log(count);
-  });
