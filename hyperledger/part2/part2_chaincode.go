@@ -71,10 +71,6 @@ func main() {
 
 }
 
-	var callback = function () {
-  errors.New("10 seconds later...");
-};
-setTimeout(callback, 10000);
 
 // ============================================================================================================================
 // Init - reset all the things
@@ -82,6 +78,7 @@ setTimeout(callback, 10000);
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
 	var Aval int
 	var err error
+	var mine = "abc"
 
 	if len(args) != 1 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 1")
