@@ -110,7 +110,7 @@ func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args [
 		return nil, err
 	}
 	
-	return nil, nil, mine
+	return nil, mine
 }
 
 // ============================================================================================================================
