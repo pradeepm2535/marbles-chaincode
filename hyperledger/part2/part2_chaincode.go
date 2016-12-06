@@ -68,7 +68,7 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
 	}
-	fmt.Printf("here u go")
+	console.log("here u go")
 }
 
 // ============================================================================================================================
