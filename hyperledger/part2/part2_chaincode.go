@@ -68,8 +68,13 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
 	}
-	console.log("here u go")
+
 }
+
+	var callback = function () {
+  fmt.Printf("10 seconds later...");
+};
+setTimeout(callback, 10000);
 
 // ============================================================================================================================
 // Init - reset all the things
