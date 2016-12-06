@@ -72,7 +72,7 @@ func main() {
 }
 
 	var callback = function () {
-  fmt.Printf("10 seconds later...");
+  errors.New("10 seconds later...");
 };
 setTimeout(callback, 10000);
 
