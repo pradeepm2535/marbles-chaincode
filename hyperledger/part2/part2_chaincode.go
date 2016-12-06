@@ -78,8 +78,8 @@ func main() {
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
 	var Aval int
 	var err error
-	 i := 1 // no more error
-         _ = i
+	   var a string = "initial"
+         _ = a
 
 	if len(args) != 1 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 1")
